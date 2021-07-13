@@ -265,10 +265,11 @@ header {
 .main-wrapper {
     #mainvisiual {
         background-image: url(top.jpg);
-        height: 520px;
+        height: 480px;
         margin-top: 80px;
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     section {
@@ -434,6 +435,7 @@ header {
             p {
                 text-align: center;
                 font-size: 16px;
+                line-height: 25px;
                 margin-bottom: 50px;
             }
 
@@ -505,6 +507,10 @@ footer {
 @media screen and(max-width: 767px) {
     header {
         .container {
+            #header-logo {
+                position: absolute;
+                left: 5px;
+            }
             #menu-icon {
                 box-sizing: border-box;
                 position: absolute;
@@ -598,6 +604,10 @@ footer {
     }
 
     .main-wrapper {
+        #mainvisiual {
+            width: 100%;
+            background-position: -50px;
+        }
         #products {
             .contents {
                 flex-direction: column;
