@@ -595,7 +595,7 @@ footer .container p {
     margin-left: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    background-color: rgba(80, 78, 78, 0);
+    background-color: rgba(80, 78, 78, 0.3);
   }
   header .container nav ul li:hover {
     text-decoration: none;
@@ -609,9 +609,6 @@ footer .container p {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-  }
-  .main-wrapper #mainvisiual {
-    background-position: -70px;
   }
   .main-wrapper #products .contents {
     -webkit-box-orient: vertical;

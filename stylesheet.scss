@@ -586,7 +586,7 @@ footer {
                     li {
                         margin-left: 0;
                         transition: 0.3s;
-                        background-color:rgba(80, 78, 78, 0);
+                        background-color:rgba(80, 78, 78, 0.3);
                         
                         &:hover  {
                             text-decoration: none;
@@ -610,9 +610,9 @@ footer {
     }
 
     .main-wrapper {
-        #mainvisiual {
-            background-position: -70px;
-        }
+        // #mainvisiual {
+        //     // background-position: -70px;
+        // }
         #products {
             .contents {
                 flex-direction: column;
