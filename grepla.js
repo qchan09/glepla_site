@@ -15,6 +15,8 @@ $(function () {
             //リサイズされたときの処理
             if (window.matchMedia("(min-width: 768px)").matches) {
                 $("#header-nav").show();
+            }else{
+                $("#header-nav").hide();
             }
         });
         
