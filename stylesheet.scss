@@ -256,6 +256,9 @@ header {
                         font-size: 18px;
                     }
                 }
+                .close {
+                    display: none;
+                }
             }
         }
     }
@@ -265,10 +268,11 @@ header {
 .main-wrapper {
     #mainvisiual {
         background-image: url(top.jpg);
+        width: 100%;
         height: 520px;
         margin-top: 80px;
         background-size: cover;
-        background-position: center bottom 0;
+        background-position: 20% 80%;
         background-repeat: no-repeat;
     }
 
@@ -605,8 +609,7 @@ footer {
 
     .main-wrapper {
         #mainvisiual {
-            width: 100%;
-            background-position: -50px;
+            background-position: -70px;
         }
         #products {
             .contents {

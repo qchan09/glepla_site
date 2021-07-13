@@ -4,6 +4,11 @@ $(function(){
         $(this).toggleClass("open");
         $("#header-nav").fadeToggle(300);
     });
+
+    $(".header-list").click(function(){
+        $("#header-nav").hide();
+    });
+
     $("#mainvisiual").hide().fadeIn(1000);
     
     $(window).scroll(function () {
