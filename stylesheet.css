@@ -1,0 +1,682 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+* {
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333333;
+  font-family: atten-new, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 10%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 40px;
+  margin-bottom: 75px;
+}
+
+p {
+  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  opacity: 0.9;
+  position: fixed;
+  top: 0px;
+  z-index: 30;
+}
+
+header .container {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container #header-logo a img {
+  width: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .container #header-logo a img:hover {
+  opacity: 0.7;
+}
+
+header .container #menu-icon {
+  display: none;
+}
+
+header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .container nav ul li {
+  margin-left: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .container nav ul li:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+header .container nav ul li a {
+  font-size: 18px;
+}
+
+.main-wrapper #mainvisiual {
+  background-image: url(top.jpg);
+  height: 520px;
+  margin-top: 80px;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-wrapper section {
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+.main-wrapper #about .contents {
+  text-align: center;
+}
+
+.main-wrapper #about .contents p {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.main-wrapper #products {
+  background-color: #F6F6F6;
+}
+
+.main-wrapper #products .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-wrapper #products .contents .product-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-wrapper #products .contents .product {
+  display: inline-block;
+  width: 31%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.main-wrapper #products .contents .product:hover {
+  opacity: 0.7;
+}
+
+.main-wrapper #products .contents .product img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.main-wrapper #products .contents .product p {
+  font-size: 12px;
+  margin: 0 4%;
+  line-height: 23px;
+}
+
+.main-wrapper #products .contents .fadein {
+  opacity: 1;
+}
+
+.main-wrapper #news .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-wrapper #news .contents dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 20px;
+  width: 60%;
+  opacity: 0;
+}
+
+.main-wrapper #news .contents dl dt {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 10px 0 0;
+}
+
+.main-wrapper #news .contents dl dd {
+  width: 65%;
+  margin: 20px 0 0 0px;
+}
+
+.main-wrapper #news .contents .fadein {
+  opacity: 1;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.main-wrapper #news .contents img {
+  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: -80px;
+}
+
+.main-wrapper #access {
+  background-color: #F6F6F6;
+}
+
+.main-wrapper #access .contents h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 35px 0 25px 0;
+}
+
+.main-wrapper #access .contents .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main-wrapper #access .contents .detail .detail-text {
+  width: 55%;
+  padding: 0 2%;
+}
+
+.main-wrapper #access .contents .detail .detail-text h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.main-wrapper #access .contents .detail .detail-text dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-wrapper #access .contents .detail .detail-text dl dt {
+  font-size: 18px;
+  width: 35%;
+  padding: 10px 20px;
+}
+
+.main-wrapper #access .contents .detail .detail-text dl dd {
+  font-size: 18px;
+  width: 65%;
+  padding: 10px 0px;
+}
+
+.main-wrapper #access .contents .detail img {
+  width: 45%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.main-wrapper #contact .contents p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.main-wrapper #contact .contents dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-wrapper #contact .contents dl dt {
+  font-size: 18px;
+  width: 45%;
+  padding: 10px 20px;
+  text-align: right;
+}
+
+.main-wrapper #contact .contents dl dd {
+  font-size: 18px;
+  width: 55%;
+  padding: 10px 0px;
+  text-align: left;
+}
+
+footer {
+  margin-bottom: 150px;
+}
+
+footer .container nav ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .container nav ul li a {
+  display: block;
+  margin-bottom: 30px;
+}
+
+footer .container nav ul li a img {
+  width: 30px;
+  margin: 10px;
+}
+
+footer .container nav ul li a:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .container p {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  header .container #menu-icon {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  header .container #menu-icon span {
+    position: absolute;
+    top: 19px;
+    left: 17px;
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #666;
+    vertical-align: top;
+  }
+  header .container #menu-icon span:nth-child(2) {
+    margin-top: 10px;
+  }
+  header .container #menu-icon span:last-child {
+    margin-top: 20px;
+  }
+  header .container .open span {
+    top: 9px !important;
+  }
+  header .container .open span:first-child {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: 20px;
+  }
+  header .container .open span:nth-child(2) {
+    display: none !important;
+  }
+  header .container .open span:last-child {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 20px;
+  }
+  header .container nav {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: calc(468px - 60px);
+    background: rgba(80, 78, 78, 0.5);
+  }
+  header .container nav ul {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .container nav ul li {
+    margin-left: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: rgba(80, 78, 78, 0);
+  }
+  header .container nav ul li:hover {
+    text-decoration: none;
+    background-color: rgba(80, 78, 78, 0.7);
+  }
+  header .container nav ul li a {
+    display: block;
+    padding: 25px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .main-wrapper #products .contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-wrapper #products .contents .product-title {
+    padding: 8px 0;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .main-wrapper #products .contents .product {
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .main-wrapper #products .contents .product p {
+    font-size: 15px;
+    text-align: left;
+    margin: 8px 15px;
+  }
+  .main-wrapper #products .contents .product p br {
+    display: none;
+  }
+  .main-wrapper #news .contents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-wrapper #news .contents dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .main-wrapper #news .contents dl dt {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 10px 0 0;
+  }
+  .main-wrapper #news .contents dl dd {
+    width: 65%;
+    margin: 20px 0 0 10px;
+  }
+  .main-wrapper #news .contents img {
+    width: 70%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 100px 0 0 0;
+  }
+  .main-wrapper #access .contents .detail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-wrapper #access .contents .detail .detail-text {
+    width: 100%;
+  }
+  .main-wrapper #access .contents .detail img {
+    width: 90%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 80px;
+  }
+}
+/*# sourceMappingURL=stylesheet.css.map */
