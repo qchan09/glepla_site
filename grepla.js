@@ -14,7 +14,7 @@ $(function(){
     $(window).scroll(function () {
         var wHeight = $(window).height();
         var scrollAmount = $(window).scrollTop();
-        $('.product,#article').each(function () {
+        $('.container').each(function () {
             var targetPosition = $(this).offset().top;
             if(scrollAmount > targetPosition - wHeight + 150) {
                 $(this).addClass("fadein");
