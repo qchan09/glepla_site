@@ -7,6 +7,7 @@ $(function(){
 
     $(".header-list").click(function(){
         $("#header-nav").hide();
+        $("#menu-icon").removeClass("open")
     });
 
     $("#mainvisiual").hide().fadeIn(1000);
