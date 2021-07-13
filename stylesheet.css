@@ -267,7 +267,7 @@ header .container nav ul li a {
   height: 520px;
   margin-top: 80px;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom 0;
   background-repeat: no-repeat;
 }
 
