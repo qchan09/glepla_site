@@ -216,14 +216,13 @@ p {
 
 header {
   width: 100%;
-  background-color: white;
-  opacity: 0.9;
   position: fixed;
   top: 0px;
-  z-index: 30;
 }
 
 header .container {
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 80px;
   display: -webkit-box;
@@ -237,6 +236,21 @@ header .container {
           align-items: center;
 }
 
+header .container #header-back {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+header .container #header-logo {
+  z-index: 20;
+}
+
 header .container #header-logo a img {
   width: 50px;
   -webkit-transition: 0.3s;
@@ -248,32 +262,32 @@ header .container #header-logo a img:hover {
 }
 
 header .container #menu-icon {
-  display: none;
+  z-index: 20;
 }
 
-header .container nav ul {
+header .container #header-nav {
+  z-index: 20;
+}
+
+header .container #header-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .container nav ul li {
+header .container #header-nav ul li {
   margin-left: 30px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-header .container nav ul li:hover {
+header .container #header-nav ul li:hover {
   opacity: 0.7;
   text-decoration: underline;
 }
 
-header .container nav ul li a {
+header .container #header-nav ul li a {
   font-size: 18px;
-}
-
-header .container nav ul .close {
-  display: none;
 }
 
 .main-wrapper #mainvisiual {
@@ -516,6 +530,9 @@ footer .container p {
 }
 
 @media screen and (max-width: 767px) {
+  header .container {
+    position: relative;
+  }
   header .container #header-logo {
     position: absolute;
     left: 5px;
@@ -541,6 +558,8 @@ footer .container p {
     border-radius: 2px;
     background-color: #666;
     vertical-align: top;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
   header .container #menu-icon span:nth-child(2) {
     margin-top: 10px;
@@ -548,34 +567,36 @@ footer .container p {
   header .container #menu-icon span:last-child {
     margin-top: 20px;
   }
-  header .container .open span {
+  header .container #menu-icon.open span {
     top: 9px !important;
   }
-  header .container .open span:first-child {
+  header .container #menu-icon.open span:first-child {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     margin-top: 20px;
   }
-  header .container .open span:nth-child(2) {
+  header .container #menu-icon.open span:nth-child(2) {
     display: none !important;
   }
-  header .container .open span:last-child {
+  header .container #menu-icon.open span:last-child {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     margin-top: 20px;
   }
-  header .container nav {
+  header .container #header-nav {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     position: fixed;
-    top: 80px;
+    top: -100%;
     left: 0;
-    display: none;
     width: 100%;
     height: calc(468px - 60px);
     background: rgba(80, 78, 78, 0.5);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: -10;
   }
-  header .container nav ul {
+  header .container #header-nav ul {
     width: 100%;
     position: absolute;
     top: 0;
@@ -591,17 +612,17 @@ footer .container p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  header .container nav ul li {
+  header .container #header-nav ul li {
     margin-left: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     background-color: rgba(80, 78, 78, 0.3);
   }
-  header .container nav ul li:hover {
+  header .container #header-nav ul li:hover {
     text-decoration: none;
     background-color: rgba(80, 78, 78, 0.7);
   }
-  header .container nav ul li a {
+  header .container #header-nav ul li a {
     display: block;
     padding: 25px;
     border-radius: 5px;
@@ -609,6 +630,9 @@ footer .container p {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
+  }
+  header .container #header-nav.sp_open {
+    top: 80px;
   }
   .main-wrapper #products .contents {
     -webkit-box-orient: vertical;
