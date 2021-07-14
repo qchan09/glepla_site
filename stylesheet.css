@@ -245,11 +245,11 @@ header .container #header-back {
   left: 0;
   background-color: white;
   opacity: 0.9;
-  z-index: 10;
+  z-index: 110;
 }
 
 header .container #header-logo {
-  z-index: 20;
+  z-index: 120;
 }
 
 header .container #header-logo a img {
@@ -263,11 +263,11 @@ header .container #header-logo a img:hover {
 }
 
 header .container #menu-icon {
-  z-index: 20;
+  z-index: 120;
 }
 
 header .container #header-nav {
-  z-index: 20;
+  z-index: 120;
 }
 
 header .container #header-nav ul {

@@ -240,12 +240,12 @@ header {
             left: 0;
             background-color: white;
             opacity: 0.9;
-            z-index: 10;
+            z-index: 110;
         }
         // 
         #header-logo {
             // header-backの上に来るように
-            z-index: 20;
+            z-index: 120;
             // 
             a {
                 img {
@@ -262,12 +262,12 @@ header {
         #menu-icon {
             // display: none;
             // header-backの上に来るように
-            z-index: 20;
+            z-index: 120;
             // 
         }
 
         #header-nav {
-            z-index: 20;
+            z-index: 120;
             ul {
                 display: flex;
 
