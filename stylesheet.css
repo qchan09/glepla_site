@@ -218,6 +218,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0px;
+  z-index: 100;
 }
 
 header .container {
@@ -343,6 +344,7 @@ header .container #header-nav ul li a {
   padding: 10px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 1;
 }
 
 .main-wrapper #products .contents .product:hover {
@@ -633,6 +635,7 @@ footer .container p {
   }
   header .container #header-nav.sp_open {
     top: 80px;
+    z-index: 100;
   }
   .main-wrapper #products .contents {
     -webkit-box-orient: vertical;
