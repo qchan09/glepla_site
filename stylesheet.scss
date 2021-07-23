@@ -223,8 +223,9 @@ header {
     // hoverしたときにproductより上に来るように
     z-index: 100;
     // 
+    
     .container {
-        position: fixed;
+        // position: fixed;
         top: 0;
         width: 100%;
         height: 80px;
