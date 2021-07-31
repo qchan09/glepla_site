@@ -357,7 +357,7 @@ header .container #header-nav ul li a {
 
 .main-wrapper #products .contents .product p {
   font-size: 12px;
-  margin: 0 4%;
+  margin: 0 10%;
   line-height: 23px;
 }
 
@@ -379,7 +379,7 @@ header .container #header-nav ul li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 20px;
+  font-size: 16px;
   width: 60%;
 }
 
@@ -433,7 +433,7 @@ header .container #header-nav ul li a {
 }
 
 .main-wrapper #access .contents .detail .detail-text h3 {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
@@ -446,13 +446,13 @@ header .container #header-nav ul li a {
 }
 
 .main-wrapper #access .contents .detail .detail-text dl dt {
-  font-size: 18px;
+  font-size: 16px;
   width: 35%;
   padding: 10px 20px;
 }
 
 .main-wrapper #access .contents .detail .detail-text dl dd {
-  font-size: 18px;
+  font-size: 16px;
   width: 65%;
   padding: 10px 0px;
 }
@@ -654,8 +654,9 @@ footer .container p {
   }
   .main-wrapper #products .contents .product p {
     font-size: 15px;
+    line-height: 28px;
     text-align: left;
-    margin: 8px 15px;
+    margin: 3% 8%;
   }
   .main-wrapper #products .contents .product p br {
     display: none;
